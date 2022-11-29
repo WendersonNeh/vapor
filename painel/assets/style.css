@@ -1,0 +1,369 @@
+/* BODY REGION */
+#cont_principal {
+    background-color: #3598DC;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 10% 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* SCREEN LOGIN REGION */
+
+#for_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  #5AB2D6;
+    width: 450px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+#for_login #imgs_loguin{
+    width: 100px;
+    height: auto;
+    margin: 20px 0;
+}
+
+#for_login .campo_login{
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    height: 50px;
+    justify-content: center;
+    margin: 10px;
+}
+
+#for_login .campo_login .imgs_loguin{
+    width: 52px;
+    height: auto;
+}
+
+#for_login .campo_login .input_logins{
+    width: 80%;
+    margin: 0 2%;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+}
+
+#for_login #bnt_login {
+    width: 90%;
+    height: 50px;
+    margin: 10px 0;
+    background-color: #000;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    transition: 200ms;
+}
+
+#for_login #bnt_login:hover {
+    background-color: #3598DC;
+    cursor: pointer;
+}
+
+#for_login #error_msg{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 0 5px;
+    align-items: center;
+    background-color: #FF6961;
+    border-radius: 5px;
+    color: #581d22;
+    font-weight: bold;
+}
+
+.error_msg {
+    background-color: #F8D7DA;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #721c24;
+}
+
+.success_msg {
+    background-color: #d4edda;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #155724;
+}
+
+/* SCREEN LOGIN FIM REGION */
+
+
+
+/* SCREEN PAINEL  */ 
+
+#dash_container {    
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#dash_container #menus {
+    width: 15%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:   #5AB2D6;
+    
+} 
+
+#dash_container #sub-dash{
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#dash_container #menus #dash_menu{
+    width: 100%;
+    height: 90vh;
+}
+
+#dash_container #menus #dash_menu #logo{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+#dash_container #menus #dash_menu #logo img{
+    width: 90px;
+    height: auto;
+    padding: 5px;
+}
+
+#dash_container #menus #dash_menu .campos_menu{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+    
+}
+#dash_container #menus #dash_menu .campos_menu .img_logos {
+    width: 60px;
+    height: auto;
+    padding: 5px;
+}
+#dash_container #menus #dash_menu2 #img_sair{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dash_container #menus #dash_menu a {
+    text-decoration: none;
+    color:#fff;
+    padding-left: 5px;
+}
+
+#dash_container #menus #dash_menu2 #img_sair img{
+    width: 60px;
+    height: auto;
+    padding: 5px;
+}
+
+/* Fim PAINEL  */ 
+
+/* sub-dash menu */
+
+#dash_container #sub-dash{
+    background-color: #000;
+}
+
+
+#dash_container #sub-dash #top_menu{
+    width: 100%;
+    height: 6vh;
+    background-color: #3598DC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ; 
+}
+#dash_container #sub-dash #top_menu #top_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dash_container #sub-dash #top_menu #top_title h2{
+    padding-left: 15px;
+    color:#fff;
+}
+
+#dash_container #sub-dash #top_menu #top_usuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dash_container #sub-dash #top_menu #top_usuario h2{
+    padding-right: 15px;
+    color:#fff;
+}
+
+/* sub-dash menu fim */
+
+/* sub-dash container */
+
+
+#dash_container #sub-dash #sub-container{
+    width: 100%;
+    min-height: 94vh;
+    background-color: #929292;
+    display: flex;
+    flex-direction: column;
+}
+#dash_container #sub-dash #sub-container h1{
+    color: #f2f2f2;
+}
+
+/* sub-dash fim container */
+
+/* Tabelas idiomas */
+
+#dash_container #sub-dash #sub-container .button_add {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 8px;
+    padding-right: 5px;
+    height: 55px;
+}
+
+#dash_container #sub-dash #sub-container .button_add .button_ {
+    background-color: #3598DC;
+    color: #FFF;    
+    height: 40px;
+    
+}
+
+#dash_container #sub-dash #sub-container .tabela table {
+   width: 100%;
+}
+
+#dash_container #sub-dash #sub-container .tabela table th {
+    height: 40px;
+    text-align: center;
+    background-color: #3598DC;
+    color: #FFF;
+    /* padding-left: 10px; */
+}
+
+#dash_container #sub-dash #sub-container .tabela table tr {
+    height: 40px;
+    text-align: center;
+    background-color: #FFF;
+}
+#dash_container #sub-dash #sub-container .tabela table tr a:hover {  
+    color: #000;
+}
+
+/* Tabelas fim tabelas */
+
+/* Tela idioma editar ksksks  */
+
+.formulario_novos_idiomas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 30px;
+    
+}
+
+.formulario_novos_idiomas label{
+    display: flex;
+    color: #FFF;
+    justify-content: center;
+
+}
+
+.formulario_novos_idiomas input{
+
+    width: 180px;
+    height: 35px;
+    text-align: center;
+ 
+}
+
+
+.formulario_novos_idiomas .button_editar {
+    color: #FFF;
+    background-color: #3598DC;
+    height: 40px;
+    
+}
+
+.formulario_novos_idiomas #button_editar1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* fim ksksks */
+
+
+/* novos_jogos */
+
+
+.ao_lado{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+ 
+}
+
+.ao_lado .inputs_jogos, .input-jogos {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.full {
+    width: calc(25% - 10px);
+    margin: 5px;
+}
+
+.ao_lado label{
+    color: #FFF;
+    background-color: #3598DC;
+}
+
+#button_editar2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#button_editar2 .button_editar2{
+    color: #FFF;
+    background-color: #3598DC;    
+}
+
+/* fim */
+
+/* msg de sem dados */
+
+#msg_sem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/* fim */
