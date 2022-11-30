@@ -3,6 +3,8 @@
     require('./modulos/conexao.php');
 ?>
 
+<script src="assets/scripts.js" ></script>
+
 <div id="top_menu">
     <div id="top_title">
         <h2>Vapor - Painel de Controle</h2>

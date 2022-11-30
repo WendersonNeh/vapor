@@ -54,7 +54,7 @@
                                 <td class="links"><a href="jogos_idiomas.php?id=<?= $jogo['id'] ?>">Idiomas</a></td>
                                 <td class="links"><a href="jogos_plataforma.php?id=<?= $jogo['id'] ?>">Plataforma</a></td>
                                 <td class="links"><a href="jogos_editar.php?id=<?= $jogo['id'] ?>">Editar</a></td>
-                                <td class="links"><a href="jogos_excluir.php?id=<?= $jogo['id'] ?>">Excluir</a></td>
+                                <td class="links"><a onclick="excluirJogo(<?= $jogo['id'] ?>)" href="#">Excluir</a></td>
                             </tr>
 
                         <?php } ?>
