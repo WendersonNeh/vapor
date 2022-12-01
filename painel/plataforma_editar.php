@@ -44,7 +44,7 @@ $Error = $_GET['error_msg'] ?? null;
                         <br>
 
                         <?php if ($Error != null) { ?>
-                            <div class="error_msg"><?= $Error ?></div>
+                            <div class="error_msg" id="error_msg" ><?= $Error ?></div>
                         <?php } ?>
 
                         <br>
