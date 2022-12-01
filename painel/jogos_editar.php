@@ -52,7 +52,7 @@ $sucess_msg = $_GET['success_msg'] ?? null;
 
                             <div class="inputs_jogos full">
                                 <label for="name">Nome*</label>
-                                <input required name="name" id="name" type="text" value="<?= $jogo['nome'] ?>">
+                                <input onclick="removeSuccessMenssage()" required name="name" id="name" type="text" value="<?= $jogo['nome'] ?>">
                             </div>
 
                             <div class="inputs_jogos full">
@@ -112,11 +112,11 @@ $sucess_msg = $_GET['success_msg'] ?? null;
 
 
                         <?php if ($Error != null) { ?>
-                            <div class="error_msg"><?= $Error ?></div>
+                            <div class="error_msg" id="error_msg" ><?= $Error ?></div>
                         <?php } ?>
 
                         <?php if ($sucess_msg != null) { ?>
-                            <div class="success_msg"><?= $sucess_msg ?></div>
+                            <div class="success_msg" id="success_msg" ><?= $sucess_msg ?></div>
                         <?php } ?>
 
 

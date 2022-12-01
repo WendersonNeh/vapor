@@ -38,7 +38,7 @@ $Error = $_GET['error_msg'] ?? null;
                 <div class="formulario_novos_idiomas">
                     <form id="formulario_idioma" action="plataforma_editar_atualizar.php" method="POST">
                         <br> <label for="novo_idioma"><strong>Editar - Plataforma</strong> </label>
-                        <br> <input value="<?= $plataforma['nome'] ?>" type="text" id="idioma1" name="idioma1"><br>
+                        <br> <input onclick="removeErrorMenssage()" value="<?= $plataforma['nome'] ?>" type="text" id="idioma1" name="idioma1"><br>
                         <input value="<?= $id_plataforma ?>" name="id" type="hidden">
 
                         <br>

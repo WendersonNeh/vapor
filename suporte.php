@@ -7,7 +7,6 @@ $sucess_msg = $_GET['success_msg'] ?? null;
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-<link rel="stylesheet" href="styles.css">
 <?php require('./modulos/top-menu.php') ?>
 
 <body>
@@ -21,10 +20,10 @@ $sucess_msg = $_GET['success_msg'] ?? null;
                 <form action="suporte_formulario.php" method="post">
 
                     <label class="suporte_label" for="fname">Nome:*</label><br>
-                    <input required type="text" id="fname" name="nome_suporte" class="suporte_input" value=""><br>
+                    <input required type="text" onclick="removeSuccessMenssage()" id="fname" name="nome_suporte" class="suporte_input" value=""><br>
 
                     <label class="suporte_label" for="email_1">E-mail:*</label><br>
-                    <input required type="email" id="email_1" name="email_suporte" class="suporte_input" value=""><br>
+                    <input required type="email"  id="email_1" name="email_suporte" class="suporte_input" value=""><br>
 
                     <label class="suporte_label">Mensagem:*<label><br>
                             <textarea required type="text" name="mensagem_suporte" id="msg" cols="30" class="suporte_input1" rows="10"></textarea><br>
@@ -47,7 +46,7 @@ $sucess_msg = $_GET['success_msg'] ?? null;
 
 
                 <?php if ($sucess_msg != null) { ?>
-                    <div class="success_msg"><?= $sucess_msg ?></div>
+                    <div class="success_msg" id="success_msg"><?= $sucess_msg ?></div>
                 <?php } ?>
 
             </div>

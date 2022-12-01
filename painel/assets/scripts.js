@@ -1,11 +1,23 @@
+// tirar msg de sucesso ou erro em loguin/painel
+
 function removeErrorMenssage() {
-    let errorMessage = document.getElementById("error_msg")
+    const errorMessage = document.getElementById("error_msg")
     
     if(errorMessage != null){
         errorMessage.remove()
     }
+    
+}
+
+function removeSuccessMenssage() {
+    const removeSuccessMenssage = document.getElementById("success_msg")
+
+    if(removeSuccessMenssage != null) {
+        removeSuccessMenssage.remove()
+    }
 
 }
+
 
 
 // Excluir com msg de java  

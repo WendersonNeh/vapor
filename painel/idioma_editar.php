@@ -38,13 +38,13 @@ $Error = $_GET['error_msg'] ?? null;
                 <div class="formulario_novos_idiomas">
                     <form id="formulario_idioma" action="idioma_editar_atualizar.php" method="POST">
                         <br> <label for="novo_idioma"><strong>Editar - Idioma</strong> </label>
-                        <br> <input value="<?= $idioma['nome'] ?>" type="text" id="idioma1" name="idioma1"><br>
+                        <br> <input onclick="removeErrorMenssage()" value="<?= $idioma['nome'] ?>" type="text" id="idioma1" name="idioma1"><br>
                         <input value="<?= $id_idioma ?>" name="id" type="hidden">
 
                         <br>
 
                         <?php if ($Error != null) { ?>
-                            <div class="error_msg"><?= $Error ?></div>
+                            <div class="error_msg" id="error_msg"><?= $Error ?></div>
                         <?php } ?>
 
                         <br>
