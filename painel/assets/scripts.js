@@ -18,6 +18,7 @@ function removeSuccessMenssage() {
 
 }
 
+// fim da remoção de msg automatica
 
 
 // Excluir com msg de java  
@@ -55,7 +56,7 @@ function excluirCategoria(idcategoria) {
 }
 
 function excluirMensagem(idmensagem) {
-    let excluirMensagem = confirm("Realmente deseja excluir essa mensagem?")
+    let excluirMensagem = confirm("Realmente deseja arquivar essa mensagem?")
     
     if (excluirMensagem == true)  {
         window.open("mensagem_excluir.php?id=" + idmensagem, "_SELF")

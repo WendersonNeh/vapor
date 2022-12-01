@@ -45,7 +45,7 @@ $suportes = mysqli_query($conn, $query_suporte);
                                 <td><?= $suporte['nome'] ?></td>
                                 <td><?= $suporte['assunto'] ?></td>
                                 <td class="links"> <a href="mensagens_visualizar.php?id=<?= $suporte['id'] ?>">Visualizar</a></td>
-                                <td class="links"> <a href="mensagem_excluir.php?id=<?= $suporte['id'] ?>">Arquivar</a></td>
+                                <td class="links"> <a onclick="excluirMensagem(<?= $suporte['id'] ?>)" href="#">Arquivar</a></td>
 
                             </tr>
 
