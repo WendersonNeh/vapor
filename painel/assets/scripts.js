@@ -1,22 +1,36 @@
 // tirar msg de sucesso ou erro em loguin/painel
 
-function removeErrorMenssage() {
-    const errorMessage = document.getElementById("error_msg")
+// modelo velho
+
+// function removeErrorMenssage() {
+//     const errorMessage = document.getElementById("error_msg")
     
-    if(errorMessage != null){
-        errorMessage.remove()
+//     if(errorMessage != null){
+//         errorMessage.remove()
+//     }
+    
+// }
+
+// function removeSuccessMenssage() {
+//     const removeSuccessMenssage = document.getElementById("success_msg")
+
+//     if(removeSuccessMenssage != null) {
+//         removeSuccessMenssage.remove()
+//     }
+
+// }
+
+// novo modelo de remove msg 
+
+function removeElementoPorId(idElemento){
+    let elemento = document.getElementById(idElemento)
+
+    if(elemento != null){
+        elemento.remove()
     }
-    
+
 }
 
-function removeSuccessMenssage() {
-    const removeSuccessMenssage = document.getElementById("success_msg")
-
-    if(removeSuccessMenssage != null) {
-        removeSuccessMenssage.remove()
-    }
-
-}
 
 // fim da remoção de msg automatica
 

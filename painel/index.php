@@ -24,7 +24,7 @@ $Error = $_GET['error_msg'] ?? null;
             <img src="public/icons/logo.png" alt="login_image" id="imgs_loguin">
             <div class="campo_login">
                 <img src="public/icons/email.png" alt="email" class="imgs_loguin">
-                <input onclick="removeErrorMenssage()" type="email" placeholder="E-mail" name="email_login" class="input_logins" required>
+                <input onclick="removeElementoPorId('error_msg')" type="email" placeholder="E-mail" name="email_login" class="input_logins" required>
             </div>
             <div class="campo_login">
                 <img src="public/icons/cadeado.png" alt="lock" class="imgs_loguin">

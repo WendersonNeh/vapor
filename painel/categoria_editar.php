@@ -38,7 +38,7 @@ $Error = $_GET['error_msg'] ?? null;
                 <div class="formulario_novos_idiomas">
                     <form id="formulario_idioma" action="categoria_editar_atualizar.php" method="POST">
                         <br> <label for="novo_idioma"><strong>Editar - Categoria</strong> </label>
-                        <br> <input onclick="removeErrorMenssage()" value="<?= $categoria['nome'] ?>" type="text" id="idioma1" name="idioma1"><br>
+                        <br> <input onclick="removeElementoPorId('error_msg')" value="<?= $categoria['nome'] ?>" type="text" id="idioma1" name="idioma1"><br>
                         <input value="<?= $id_categoria ?>" name="id" type="hidden">
 
                         <br>

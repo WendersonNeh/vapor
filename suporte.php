@@ -20,7 +20,7 @@ $sucess_msg = $_GET['success_msg'] ?? null;
                 <form action="suporte_formulario.php" method="post">
 
                     <label class="suporte_label" for="fname">Nome:*</label><br>
-                    <input required type="text" onclick="removeSuccessMenssage()" id="fname" name="nome_suporte" class="suporte_input" value=""><br>
+                    <input required type="text" onclick="removeElementoPorId('success_msg')" id="fname" name="nome_suporte" class="suporte_input" value=""><br>
 
                     <label class="suporte_label" for="email_1">E-mail:*</label><br>
                     <input required type="email"  id="email_1" name="email_suporte" class="suporte_input" value=""><br>
