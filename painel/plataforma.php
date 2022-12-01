@@ -50,7 +50,7 @@
                             <tr>
                                 <td><?= $plataforma['nome'] ?></td>
                                 <td class="links"><a href="plataforma_editar.php?id=<?= $plataforma['id'] ?>">Editar</a></td>
-                                <td class="links"><a href="plataforma_excluir.php?id=<?= $plataforma['id'] ?>">Excluir</a></td>
+                                <td class="links"><a onclick="excluirPlataforma(<?= $plataforma['id'] ?>)" href="#">Excluir</a></td>
                             </tr>
 
                         <?php } ?>

@@ -50,7 +50,7 @@
                             <tr>
                                 <td><?= $categoria['nome'] ?></td>
                                 <td class="links"><a href="categoria_editar.php?id=<?= $categoria['id'] ?>">Editar</a></td>
-                                <td class="links"><a href="categoria_excluir.php?id=<?= $categoria['id'] ?>">Excluir</a></td>
+                                <td class="links"><a onclick="excluirCategoria(<?= $categoria['id'] ?>)" href="#">Excluir</a></td>
                             </tr>
 
                         <?php } ?>
