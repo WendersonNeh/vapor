@@ -12,6 +12,13 @@ $developer = $_POST['developer'] ?? null;
 $category = $_POST['category'] ?? null;
 $description = $_POST['description'] ?? null;
 
+$buscar_jogo = "SELECT nome FROM jogo WHERE nome = '{$name}'";
+$jogo = mysqli_query($conn, $buscar_jogo);
+
+if ($jogo != null) {
+    header("location: jogos_editar.php?id={$id_game}&error_msg=Jogo já existente!");
+}
+
 if($video_url == "" || $video_url == null) {
 
     $query_delete_video_url = "UPDATE jogo SET video_url = null WHERE id = {$id_game}";

@@ -79,5 +79,3 @@ function excluirMensagem(idmensagem) {
 
 
 // fim da exclusao da msg 
-
-
