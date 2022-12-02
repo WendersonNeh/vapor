@@ -79,3 +79,38 @@ function excluirMensagem(idmensagem) {
 
 
 // fim da exclusao da msg 
+
+//  horas 
+
+function obterHoraAtual() {
+    let data = new Date()
+    let hora = data.getHours()
+    let minutos = data.getMinutes()
+    let segundos = data.getSeconds()
+  
+    
+  
+    if(hora < 10) {
+      hora = "0" + hora
+    }
+  
+    if(minutos < 10) {
+      minutos = "0" + minutos
+    }
+  
+    if(segundos < 10) {
+      segundos = "0" + segundos
+    }
+  
+    let dataAtual = hora +  ":"  + minutos + ":"  + segundos + ":"  + data
+  
+    return dataAtual
+  
+  }
+  
+  
+  let dataeHora = obterHoraAtual()
+  
+  console.log(dataeHora)
+
+//   fim hora
