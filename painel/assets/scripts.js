@@ -80,37 +80,48 @@ function excluirMensagem(idmensagem) {
 
 // fim da exclusao da msg 
 
-//  horas 
 
-function obterHoraAtual() {
-    let data = new Date()
-    let hora = data.getHours()
+// FUNÇÃO PARA MOSTRAR O RELOGIO
+
+function obterDataHoraAtual() {
+    const data = new Date()
+    let horas = data.getHours()
     let minutos = data.getMinutes()
     let segundos = data.getSeconds()
-  
+    let dia = data.getDate() 
+    let mes = data.getMonth()+1
+    let ano = data.getFullYear()
     
-  
-    if(hora < 10) {
-      hora = "0" + hora
+    if(horas <= 9) {
+      horas = "0" + horas
     }
   
-    if(minutos < 10) {
+    if(minutos <= 9) {
       minutos = "0" + minutos
     }
   
-    if(segundos < 10) {
+    if(segundos <= 9) {
       segundos = "0" + segundos
     }
   
-    let dataAtual = hora +  ":"  + minutos + ":"  + segundos + ":"  + data
+  
+    let dataAtual = dia + "/" + mes + "/" + ano + " - " + horas + ":" + minutos + ":" + segundos; 
+  
   
     return dataAtual
-  
   }
-  
-  
-  let dataeHora = obterHoraAtual()
-  
-  console.log(dataeHora)
 
-//   fim hora
+  function updateClock() {
+
+    const clock = document.getElementById('relogio')
+    clock.innerHTML = obterDataHoraAtual()
+
+    setInterval(function () {
+      clock.innerHTML = obterDataHoraAtual()
+      1000
+    })
+
+  }
+
+
+  //   fim hora

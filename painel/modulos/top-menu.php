@@ -11,6 +11,15 @@
     </div>
 
     <div id="top_usuario">
-        <h2>Bem-vindo, <?= $administrador['nome'] ?></h2>
+        
+        <h2>Bem-vindo, <?= $administrador['nome'] ?> - <span id="relogio"></span> </h2>
+
+        
+
     </div>
+
 </div>
+
+<script>
+    updateClock()
+</script>
