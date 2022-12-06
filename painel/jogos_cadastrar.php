@@ -41,6 +41,7 @@ $categorias = mysqli_query($conn, $categoria_query);
                             <div class="inputs_jogos full">
                                 <label for="name">Nome*</label>
                                 <input required name="name" id="name" onkeyup="caps_lok(this)" type="text">
+                                <!-- onfousout quando sair dp input onkeyup toda vez q a a tecla do teclado subir  -->
                             </div>
 
                             <div class="inputs_jogos full">
