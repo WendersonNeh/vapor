@@ -4,11 +4,11 @@
 
 // function removeErrorMenssage() {
 //     const errorMessage = document.getElementById("error_msg")
-    
+
 //     if(errorMessage != null){
 //         errorMessage.remove()
 //     }
-    
+
 // }
 
 // function removeSuccessMenssage() {
@@ -22,10 +22,10 @@
 
 // novo modelo de remove msg 
 
-function removeElementoPorId(idElemento){
+function removeElementoPorId(idElemento) {
     let elemento = document.getElementById(idElemento)
 
-    if(elemento != null){
+    if (elemento != null) {
         elemento.remove()
     }
 
@@ -39,40 +39,40 @@ function removeElementoPorId(idElemento){
 
 function excluirJogo(idjogo) {
     let excluirJogo = confirm("Realmente deseja excluir esse jogo?")
-    
-    if (excluirJogo == true)  {
+
+    if (excluirJogo == true) {
         window.open("jogos_excluir.php?id=" + idjogo, "_SELF")
     }
 }
 
 function excluirIdioma(ididioma) {
     let excluirIdioma = confirm("Realmente deseja excluir esse idioma?")
-    
-    if (excluirIdioma == true)  {
+
+    if (excluirIdioma == true) {
         window.open("idioma_excluir.php?id=" + ididioma, "_SELF")
     }
 }
 
 function excluirPlataforma(idplataforma) {
     let excluirPlataforma = confirm("Realmente deseja excluir essa plataforma?")
-    
-    if (excluirPlataforma == true)  {
+
+    if (excluirPlataforma == true) {
         window.open("plataforma_excluir.php?id=" + idplataforma, "_SELF")
     }
 }
 
 function excluirCategoria(idcategoria) {
     let excluirCategoria = confirm("Realmente deseja excluir essa categoria?")
-    
-    if (excluirCategoria == true)  {
+
+    if (excluirCategoria == true) {
         window.open("categoria_excluir.php?id=" + idcategoria, "_SELF")
     }
 }
 
 function excluirMensagem(idmensagem) {
     let excluirMensagem = confirm("Realmente deseja arquivar essa mensagem?")
-    
-    if (excluirMensagem == true)  {
+
+    if (excluirMensagem == true) {
         window.open("mensagem_excluir.php?id=" + idmensagem, "_SELF")
     }
 }
@@ -88,40 +88,57 @@ function obterDataHoraAtual() {
     let horas = data.getHours()
     let minutos = data.getMinutes()
     let segundos = data.getSeconds()
-    let dia = data.getDate() 
-    let mes = data.getMonth()+1
+    let dia = data.getDate()
+    let mes = data.getMonth() + 1
     let ano = data.getFullYear()
-    
-    if(horas <= 9) {
-      horas = "0" + horas
-    }
-  
-    if(minutos <= 9) {
-      minutos = "0" + minutos
-    }
-  
-    if(segundos <= 9) {
-      segundos = "0" + segundos
-    }
-  
-  
-    let dataAtual = dia + "/" + mes + "/" + ano + " - " + horas + ":" + minutos + ":" + segundos; 
-  
-  
-    return dataAtual
-  }
 
-  function updateClock() {
+    if (horas <= 9) {
+        horas = "0" + horas
+    }
+
+    if (minutos <= 9) {
+        minutos = "0" + minutos
+    }
+
+    if (segundos <= 9) {
+        segundos = "0" + segundos
+    }
+
+
+    let dataAtual = dia + "/" + mes + "/" + ano + " - " + horas + ":" + minutos + ":" + segundos;
+
+
+    return dataAtual
+}
+
+// update por segundo 
+
+function updateClock() {
 
     const clock = document.getElementById('relogio')
     clock.innerHTML = obterDataHoraAtual()
 
     setInterval(function () {
-      clock.innerHTML = obterDataHoraAtual()
-      1000
+        clock.innerHTML = obterDataHoraAtual()
+        1000
     })
 
-  }
+}
+//   fim hora
 
+//   função pintar no css *mudança de cor
 
-  //   fim hora
+function cor_aleatoria(){
+    const r = Math.floor(Math.random() * 256 )
+    const g = Math.floor(Math.random() * 256 )
+    const b = Math.floor(Math.random() * 256 )
+    const cor = "rgb(" + r + "," + g + "," + b + ")"
+
+    document.getElementById("top_menu").style.color = cor
+}
+
+function iniciar_mudanca_de_cor(){
+    setInterval(cor_aleatoria, 1000)
+}
+
+// fim mudança de cor

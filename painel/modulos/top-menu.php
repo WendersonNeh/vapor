@@ -22,4 +22,5 @@
 
 <script>
     updateClock()
+    iniciar_mudanca_de_cor()
 </script>

@@ -202,7 +202,7 @@
 
 #dash_container #sub-dash #top_menu #top_title h2{
     padding-left: 15px;
-    color:#fff;
+   /* color:#fff; para funcionar javascript mudança de cor  */
 }
 
 #dash_container #sub-dash #top_menu #top_usuario{
@@ -213,7 +213,7 @@
 
 #dash_container #sub-dash #top_menu #top_usuario h2{
     padding-right: 15px;
-    color:#fff;
+    /* color:#fff; para funcionar javascript mudança de cor  */
 }
 
 /* sub-dash menu fim */
