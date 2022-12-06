@@ -40,7 +40,7 @@ $categorias = mysqli_query($conn, $categoria_query);
 
                             <div class="inputs_jogos full">
                                 <label for="name">Nome*</label>
-                                <input required name="name" id="name"  type="text">
+                                <input required name="name" id="name" onfocusout="caps_lok(this)" type="text">
                             </div>
 
                             <div class="inputs_jogos full">

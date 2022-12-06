@@ -142,3 +142,11 @@ function iniciar_mudanca_de_cor(){
 }
 
 // fim mudança de cor
+
+// função para deixar em caps em jogos e ditar jogos tb  
+
+function caps_lok(elemento) {
+    elemento.value = elemento.value.toUpperCase()
+}
+
+// fim 
