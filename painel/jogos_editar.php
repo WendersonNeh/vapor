@@ -52,7 +52,7 @@ $sucess_msg = $_GET['success_msg'] ?? null;
 
                             <div class="inputs_jogos full">
                                 <label for="name">Nome*</label>
-                                <input onclick="removeElementoPorId('success_msg'); removeElementoPorId('error_msg')" onfocusout="caps_lok(this)" required name="name" id="name" type="text" value="<?= $jogo['nome'] ?>">
+                                <input onclick="removeElementoPorId('success_msg'); removeElementoPorId('error_msg')" onkeyup="caps_lok(this)" required name="name" id="name" type="text" value="<?= $jogo['nome'] ?>">
                             </div>
 
                             <div class="inputs_jogos full">
