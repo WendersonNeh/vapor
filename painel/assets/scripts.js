@@ -147,7 +147,7 @@ function iniciar_mudanca_de_cor(){
 
 function caps_lok(elemento) {
     elemento.value = elemento.value[0].toUpperCase() + elemento.value.slice(1).toLowerCase()
-    // ELEMENTO.VALUE = // W + wenderson = Wwenderson
+    // ELEMENTO.VALUE = // W + wenderson = Wwenderson teste
 }
 
 // fim 
