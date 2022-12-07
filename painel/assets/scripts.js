@@ -146,7 +146,8 @@ function iniciar_mudanca_de_cor(){
 // função para deixar em caps em jogos e ditar jogos tb  
 
 function caps_lok(elemento) {
-    elemento.value = elemento.value.toUpperCase()
+    elemento.value = elemento.value[0].toUpperCase() + elemento.value.slice(1).toLowerCase()
+    // ELEMENTO.VALUE = // W + wenderson = Wwenderson
 }
 
 // fim 
