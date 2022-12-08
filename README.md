@@ -36,4 +36,7 @@ Esse projeto foi escolhido pela turma 42, uma plataforma com intuito de utilizar
 
 Wenderson Santos da Rocha 
 
+<!-- https://stackedit.io/app#  -->
+<!-- https://github.com/alexandresanlim/Badges4-README.md-Profile -->
+
 
